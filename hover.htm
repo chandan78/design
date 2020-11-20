@@ -1,0 +1,58 @@
+<html>
+
+<body>
+    <table table align="center" id="tblMain" style="border: solid 1px black;" cellpadding="0"
+    cellspacing="0" width="200px">
+
+        <tr>
+            <th>Name</th>
+            <th>Regno.</th>
+
+        </tr>
+
+
+        <tr>
+            <th>Ram</th>
+            <th>2000</th>
+
+        </tr>
+
+
+        <tr>
+            <th>Sham</th>
+            <th>3000</th>
+
+        </tr>
+
+
+
+        <tr>
+            <th>Adarsh</th>
+            <th>11804946</th>
+
+        </tr>
+    </table>
+
+    
+       <script language="javascript">
+        var tbl = document.getElementById("tblMain");
+        if (tbl != null) {
+            if (tbl.rows[0] != null) {
+                tbl.rows[0].style.backgroundColor = "#365890";
+                tbl.rows[0].style.color = "#FFFFFF";
+            }
+            for (var i = 1; i < tbl.rows.length; i++) {
+                tbl.rows[i].style.cursor = "pointer";
+                tbl.rows[i].onmousemove = function () { this.style.backgroundColor = "#FF2080"; this.style.color = "#FFFFFF"; };
+                tbl.rows[i].onmouseout = function () { this.style.backgroundColor = ""; this.style.color = ""; };
+            }
+        }
+    </script>
+        
+
+
+
+
+    </body>
+
+</html>
